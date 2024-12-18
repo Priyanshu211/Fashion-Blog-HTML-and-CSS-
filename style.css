@@ -13,7 +13,27 @@ body{
     margin: 0 auto;
     max-width: 99vw ;
     padding: 3rem 1rem;
-    background-color: yellow;
+    background-color: yellow;  
+}
 
-    
+.secondary-container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.secondary-container #quote{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.secondary-container .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
