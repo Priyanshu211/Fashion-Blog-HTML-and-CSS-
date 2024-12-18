@@ -1,0 +1,1 @@
+Demo Practice for Fashion Blog
