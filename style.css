@@ -1,10 +1,13 @@
 body{
     margin : 0 auto;
     padding : 0;
+    
+    background: url("bg-image.avif");
+
 }
 
 .secondary-container{
-    background-color: #cbbfbf;
+    background-color: #181818ee;
     padding: 2rem 0;
 }
 
@@ -12,14 +15,14 @@ body{
 .header-container{
     padding: 0.1rem;
     margin-bottom: 2.8rem;
-    background-color: yellow;
+    /* background-color: yellow; */
 } 
 
 .header-h1{
-    font-size: 2.1 rem; ;
-    color: #ba1c1c;
+    font-size: 45px; ;
+    color: #d4cece;
     text-align: center;
-    
+    text-shadow: 1px 1px 1px #f8f5f5;
 }
 
 .header-container p{
@@ -29,8 +32,10 @@ body{
     margin: 0 auto; 
     margin-bottom: 1rem;
     font-size: 0.8rem;
-    color: #000a01;   
-    background-color: rgb(38, 38, 149);
+    color: #8f8787;   
+    /* background-color: rgb(38, 38, 149); */
+    text-shadow: 0.1px 0.1px 0.1px #f8f5f5b5;
+
 }
 
 
@@ -43,7 +48,7 @@ body{
     max-width: 66vw;
     padding: 2rem 1rem;
     margin: 0 auto;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 
@@ -56,7 +61,7 @@ body{
     /* grid-template-columns: repeat(4, 1fr);  */
     grid-template-columns: repeat(auto-fit, minmax(350px, 400px)); 
     justify-content: center;
-    background-color: orange;
+    /* background-color: orange; */
     margin: 4rem;
 } 
 
@@ -81,16 +86,18 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(233, 224, 224);
+    border: 0.5px solid rgba(0, 0, 0, 0.119);
     border-radius: 8px;
-    background-color: rgb(136, 126, 126);
+    background-color: rgba(40, 39, 39, 0.734);
+    position: relative;
 }
 
 .card-image-container{
     position: relative;
     overflow: hidden;
     height: 7rem;
-    background-color: rgb(34, 54, 69);
+    background-color: rgb(114, 108, 108);
+    border-radius: 2%;
 }
 
 @media (min-width: 768px) {
@@ -105,14 +112,14 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgb(67, 67, 191);
+    /* background-color: rgb(67, 67, 191); */
 }
 
 .card-title-container{
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    background-color: rgb(69, 7, 71);
+    /* background-color: rgb(69, 7, 71); */
 }
 
 .card-container:hover .card-image{
@@ -125,17 +132,17 @@ body{
     font-weight: 600;
     line-height: 1.5rem;
     margin-bottom: 0.3rem;
-    color: rgb(25, 23, 23);
+    color: rgb(175, 167, 167); 
 }
 
 
 .card-title-anchor:hover .card-title{
-    color:rgb(67, 67, 191);
+    color:rgb(219, 219, 227);
 }
 
 
 .card-desc{
-    color: rgb(113, 107, 107);
+    color: rgb(145, 139, 139);
     font-size: 1rem;
 }
 
@@ -152,15 +159,25 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+    
 }
 
 .author-avatar-container{
+
     height: 2.5rem;
     width: 2.5rem;
     overflow: hidden;
-    border: 1px solid rgb(150, 147, 147);
+    border: 0.3px solid rgb(30, 29, 29);
     border-radius: 50%;
-    background-color: rgb(243, 239, 239);
+    background-color: rgb(210, 206, 206);
+}
+
+.fa-solid.fa-user{
+    margin : 0.8rem;
+    transform : scale(1.2)
 }
 
 .author-info-container{
@@ -169,24 +186,26 @@ body{
 }
 
 .author-name{
-    color: rgb(38, 38, 149);
+    color: rgb(180, 167, 167);
+    
 }
 
 .author-date{
-    color: rgb(136, 126, 126);
+    color: rgb(176, 169, 169);
 }
 
 .card-tag-container{
+    margin-left: 1.5rem;
     font-size: 0.79rem;
-    border: 1px solid rgb(76, 71, 71);
+    border: 1px solid rgb(222, 215, 215);
     border-radius: 4px;
     line-height: 1.3rem;
     padding: 0.25rem 0.5rem;
-    color: grey;
+    color: rgb(186, 185, 185);
 }
 /* Navbar */
 .main-box {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(33, 33, 30, 0.077);
     height : 100vh;
     background-size: cover;
   }
@@ -207,16 +226,19 @@ body{
     left: -310px;
     height: 100vh;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(12, 12, 12, 0.867);
     box-shadow: 0 3px 5px rgba(255, 255, 255, 1);
     transition: all 0.3s linear;
+    z-index: 3;
   }
+
+
   
   .sidebar-menu .logo {
     position: absolute;
     width: 100%;
     line-height: 50px;
-    box-shadow: 0 3px 2.5px rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 2.5px rgb(124, 124, 124);
     height: 50px;
     border-bottom-right-radius: 5px;
   }
@@ -224,7 +246,7 @@ body{
   .sidebar-menu .logo a {
     position: absolute;
     left: 35px;
-    color: white;
+    color: rgb(147, 146, 146);
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
@@ -254,7 +276,7 @@ body{
   }
   
   .sidebar-menu .menu i, a {
-    color: white;
+    color: rgb(141, 140, 140);
     text-decoration: none;
     font-size: 20px;
   }
